@@ -4,11 +4,11 @@
     - name: print veggies
       ansible.builtin.debug:
         msg: fruits and veggies
-      tags: veg
+      tags: "veg"
 
     - name: print nonveg
       ansible.builtin.debug:
         msg: all meat
-      tags: nonveg
+      tags: "nonveg"
 
 
