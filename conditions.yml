@@ -1,5 +1,5 @@
 - name: conditions
-  hosts: localhost
+  hosts: all
   tasks:
     - name: print veggies
       ansible.builtin.debug:
