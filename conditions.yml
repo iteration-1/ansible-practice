@@ -1,0 +1,14 @@
+- name: conditions
+  hosts: all
+  tasks:
+    - name: print veggies
+      ansible.builtin.debug:
+        msg: fruits and veggies
+      when: type == "veggies"
+
+    - name: print nonveg
+      ansible.builtin.debug:
+        msg: all meat
+      when: type == "nonveg"
+
+
