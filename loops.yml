@@ -1,0 +1,4 @@
+- name: Loops in Ansible
+  hosts: localhost
+  tasks:
+    
