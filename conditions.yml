@@ -4,11 +4,11 @@
     - name: print veggies
       ansible.builtin.debug:
         msg: fruits and veggies
-      when: "veg"
+      when: true | bool
 
     - name: print nonveg
       ansible.builtin.debug:
         msg: all meat
-      when: "nonveg"
+      when: false | bool
 
 
